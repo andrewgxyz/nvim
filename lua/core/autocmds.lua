@@ -7,6 +7,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
     vim.opt.spell = true
     vim.opt.wrap = true
+    vim.opt.tw = 80
 
     require("lualine").setup {
       sections = {

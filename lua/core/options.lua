@@ -2,6 +2,13 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.g.have_nerd_font = true
 
+vim.scriptencoding = "utf-8"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"
+
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -46,3 +53,10 @@ vim.opt.tabstop = 2
 
 vim.opt.spell = false
 vim.opt.spelllang = "en_us"
+
+vim.opt.backup = false
+vim.opt.showcmd = true
+vim.opt.cmdheight = 0
+vim.opt.laststatus = 0
+vim.opt.expandtab = true
+vim.opt.smarttab = true
