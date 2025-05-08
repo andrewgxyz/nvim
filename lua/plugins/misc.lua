@@ -1,72 +1,59 @@
 -- Standalone plugins with less than 10 lines of config go here
 return {
-  {
-    -- Detect tabstop and shiftwidth automatically
-    "vimwiki/vimwiki",
-  },
-  {
-    "folke/twilight.nvim",
-  },
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      window = {
-        width = 80,
-        options = {
-          signcolumn = "no",
-          number = false,
-          relativenumber = false,
+    {
+        "vimwiki/vimwiki",
+    },
+    {
+        "folke/twilight.nvim",
+    },
+    {
+        "folke/zen-mode.nvim",
+        opts = {
+            window = {
+                width = 84,
+                options = {
+                    signcolumn = "no",
+                    number = false,
+                    relativenumber = false,
+                },
+            },
         },
-      },
     },
-  },
-  {
-    -- Detect tabstop and shiftwidth automatically
-    "tpope/vim-sleuth",
-  },
-  {
-    -- Powerful Git integration for Vim
-    "tpope/vim-fugitive",
-  },
-  {
-    -- GitHub integration for vim-fugitive
-    "tpope/vim-rhubarb",
-  },
-  {
-    -- Hints keybinds
-    "folke/which-key.nvim",
-  },
-  {
-    -- Autoclose parentheses, brackets, quotes, etc.
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = true,
-    opts = {},
-  },
-  {
-    -- Highlight todo, notes, etc in comments
-    "folke/todo-comments.nvim",
-    event = "VimEnter",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    opts = { signs = false },
-  },
-  {
-    -- High-performance color highlighter
-    "norcalli/nvim-colorizer.lua",
-    config = function()
-      require("colorizer").setup()
-    end,
-  },
-  {
-    "saghen/blink.cmp",
-    dependencies = { "rafamadriz/friendly-snippets" },
-    version = "1.*",
-    opts = {
-      keymap = { preset = "default" },
-      appearance = {
-        use_nvim_cmp_as_default = true,
-        nerd_font_variant = "mono",
-      },
+    {
+        -- Detect tabstop and shiftwidth automatically
+        "tpope/vim-sleuth",
     },
-  },
+    {
+        -- Powerful Git integration for Vim
+        "tpope/vim-fugitive",
+    },
+    {
+        -- GitHub integration for vim-fugitive
+        "tpope/vim-rhubarb",
+    },
+    {
+        -- Hints keybinds
+        "folke/which-key.nvim",
+    },
+    {
+        -- Autoclose parentheses, brackets, quotes, etc.
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = true,
+        opts = {},
+    },
+    {
+        -- Highlight todo, notes, etc in comments
+        "folke/todo-comments.nvim",
+        event = "VimEnter",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = { signs = false },
+    },
+    {
+        -- High-performance color highlighter
+        "norcalli/nvim-colorizer.lua",
+        config = function()
+            require("colorizer").setup()
+        end,
+    },
 }

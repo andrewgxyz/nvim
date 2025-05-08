@@ -1,7 +1,0 @@
-require 'autocomplete'
-require 'bufferline'
-require 'colortheme'
-require 'comment'
-require 'gitsigns'
-require 'neotree'
-require 'telescope'
