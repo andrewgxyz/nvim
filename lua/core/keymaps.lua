@@ -1,6 +1,7 @@
 local opts = { noremap = true, silent = true }
 
 -- NORMAL
+vim.keymap.set("n", "<leader>f", ":Pick files <CR>", {desc = "Find file"})
 
 -- quit file
 vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
@@ -19,8 +20,8 @@ vim.keymap.set("n", "N", "Nzzzv", opts)
 -- Buffers
 vim.keymap.set("n", "L", ":bnext<CR>", opts)
 vim.keymap.set("n", "H", ":bprevious<CR>", opts)
-vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts)
-vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts)
+vim.keymap.set("n", "<leader>bd", ":bdelete!<CR>", opts)
+vim.keymap.set("n", "<leader>bn", "<cmd> enew <CR>", opts)
 
 -- Writing bindings
 vim.keymap.set("n", "<leader>wz", ":ZenMode<CR>", opts)
@@ -51,3 +52,11 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv-gv'", opts)
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv-gv'", opts)
 
 vim.keymap.set("v", "p", '"_dP', opts)
+
+--vim.keymap.set("n", "<leader>/", require("Comment").toggle.linewise.current, opts)
+-- vim.keymap.set(
+--"v",
+--"<leader>/",
+--"<esc><cmd>lua require('Comment').toggle.linewise(vim.fn.visualmode())<cr>",
+--opts
+--)

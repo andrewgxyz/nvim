@@ -6,8 +6,9 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
-vim.opt.autoindent = true
-vim.opt.smartindent = true
+vim.opt.autoindent = false
+vim.opt.smartindent = false
+vim.opt.cindent = false
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -47,9 +48,9 @@ vim.opt.hlsearch = true
 vim.opt.colorcolumn = "80"
 vim.opt.linebreak = true
 vim.opt.shiftwidth = 2
-vim.opt.showtabline = 2
 vim.opt.softtabstop = 2
 vim.opt.tabstop = 2
+vim.opt.expandtab = true
 
 vim.opt.spell = false
 vim.opt.spelllang = "en_us"
