@@ -6,6 +6,8 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
+vim.opt.swapfile = false
+
 vim.opt.autoindent = false
 vim.opt.smartindent = false
 vim.opt.cindent = false
@@ -59,3 +61,5 @@ vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.laststatus = 0
+
+vim.opt.winborder = "rounded"
